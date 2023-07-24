@@ -1,0 +1,6 @@
+The first issue :
+- When i login into the system, and refresh the page i m getting out of the system (done)
+Second :
+- on add services i want to make for each car a service that will be showed on the invoice page
+Third:
+- i want to generate reports for the time chosen on the report component i.e ( 13 july - 26 july ) will show all the details of cars and prices etc…
