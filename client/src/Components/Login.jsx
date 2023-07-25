@@ -27,7 +27,7 @@ function Login({ onLogin, isAuthenticated, setIsAuthenticated }) {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://deploy-cms-api.vercel.app/login", {
+      const response = await axios.post("https://cms-api-zeta.vercel.app/login", {
         username,
         password,
       });
