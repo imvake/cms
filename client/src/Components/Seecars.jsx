@@ -49,7 +49,7 @@ function Seecars() {
 
     try {
       const response = await axios.post(
-        `http://localhost:3001/register/Seecars/${id}`,
+        `https://cms-api-zeta.vercel.app/register/Seecars/${id}`,
         {
           plateNo: plateno,
           carName: carName,
@@ -106,7 +106,7 @@ function Seecars() {
     const fetchCars = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/register/Seecars/${id}/cars`
+          `https://cms-api-zeta.vercel.app/register/Seecars/${id}/cars`
         );
         const carsData = response.data;
         setCars(carsData);
@@ -135,7 +135,7 @@ function Seecars() {
   const handleDelete = async (carId) => {
     try {
       const response = await axios.delete(
-        `http://localhost:3001/register/Seecars/${id}/${carId}`
+        `https://cms-api-zeta.vercel.app/register/Seecars/${id}/${carId}`
       );
 
       // Car deleted successfully
