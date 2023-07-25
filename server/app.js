@@ -17,8 +17,7 @@ const secretKey = crypto.randomBytes(32).toString("hex");
 const app = express();
 app.use(cors(
   {
-    origin: ["https://deploy-cms-app.vercel.app"],
-    methods: ["POST", "GET"],
+    origin: "https://deploy-cms-pjv1qzd5g-imvake.vercel.app",
     credentials: true
   }
 ));
