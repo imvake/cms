@@ -15,7 +15,13 @@ const Services = require("./Routes/Services.js");
 const secretKey = crypto.randomBytes(32).toString("hex");
 
 const app = express();
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://deploy-cms-app.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
 app.use(express.json());
 
 const connectionString =
